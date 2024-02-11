@@ -1,0 +1,58 @@
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Dice</title>
+        <meta name="description" content="Random number generator">
+        <meta name="keywords" content="">
+        <meta name="author" content="Naheel Faisal Kamal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+         body, button {
+             color:       white;
+             background:  black;
+             font-family: monospace;
+         }
+         #con {
+             font-size: 2em;
+         }
+         button {
+             font-size: 1.5em;
+         }
+
+         #dice {
+             border:         0.1em solid white;
+             border-radius:  1em;
+             border-spacing: 0px;
+             table-layout:   fixed;
+         }
+         #dice td {
+             width:      1.5em;
+             height:     1.5em;
+             font-size:  2em;
+             text-align: center;
+         }
+         #dice th, #dice td {
+             padding: 0px;
+         }
+        </style>
+
+    </head>
+    <body>
+
+        <center>
+            <pre id="con"></pre><br>
+            <button onclick="roll_html()">ROLL</button>
+        </center>
+
+        <script src="dice.js"></script>
+        <script>
+         function roll_html() {
+             document.getElementById("con").innerHTML = roll(true);
+         }
+         roll_html();
+        </script>
+
+    </body>
+</html>

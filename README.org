@@ -1,0 +1,5 @@
+* dice
+Random number generator
+
+** License
+GPL
