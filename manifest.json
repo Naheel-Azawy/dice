@@ -1,0 +1,22 @@
+{
+    "icons": [
+        {
+            "src": "dice2.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "dice2.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "name": "Dice",
+    "short_name": "Dice",
+    "display": "standalone",
+    "start_url": ".",
+    "description": "Random number generator",
+    "background_color": "#000",
+    "theme_color": "#000"
+}

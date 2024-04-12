@@ -136,6 +136,23 @@ function roll(html) {
         `${rand(1, 4)}/4 ${rand(1, 5)}/5`;
 }
 
-if (typeof process != "undefined") {
-    console.log(roll());
+async function handle_pwa() {
+    if ("serviceWorker" in navigator) {
+        try {
+            let reg = await navigator.serviceWorker.register("sw.js");
+            console.log("SW registered: ", reg);
+        } catch (e) {
+            console.log("SW registration failed: ", e);
+        }
+    }
 }
+
+function main() {
+    if (typeof process != "undefined") {
+        console.log(roll());
+    } else if (typeof window != "undefined") {
+        handle_pwa();
+    }
+}
+
+main();

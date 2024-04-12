@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Dice
+Icon=dice
+Exec=sh -c 'dice && read'
+Terminal=True
+Categories=Web;Messaging
